@@ -30,7 +30,7 @@ def printInput():
 
 # Create a container frame for top-left content
 top_left_frame = tk.Frame(frame)
-top_left_frame.pack(anchor="nw", padx=10, pady=10, expand=True) 
+top_left_frame.pack(anchor="nw", padx=10, pady=10, expand=True)  # Center vertically
 
 # Text input
 inputtxt = tk.Text(top_left_frame, height=5, width=50)
