@@ -4,13 +4,14 @@ tokens = ('Adjective', 'Verb', 'Adverb', 'Noun', 'Subject')
 def openFile(file):
     f = open(file, 'r')
     FileList = f.read()
+    FileList = FileList.replace('\n', '')
     FileList = FileList.split(',')
     return FileList 
 
 # List of all Words
 ListOfNoun = openFile('TextFiles/Noun.txt')
 ListOfAdjective = openFile('TextFiles/Adjective.txt')
-ListOfVerb = openFile('TextFiles/Adjective.txt')
+ListOfVerb = openFile('TextFiles/Verb.txt')
 ListofAdverb = openFile('TextFiles/Adverb.txt')
 ListofSubject = openFile('TextFiles/Subject.txt')
 
