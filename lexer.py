@@ -47,7 +47,7 @@ def t_Subject(t):
         return False
 
 # Test it out
-test = "big person said mostly"
+test = "he calmly chair"
 
 # Lexer Algorithm
 def LexerAlgorithm(Input):
