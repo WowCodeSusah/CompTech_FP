@@ -1,4 +1,10 @@
-run,jump,walk,talk,eat,drink,sleep,read,write,play,watch,listen,sing,dance,cook,clean,drive,fly,swim,climb,sit,stand,think,learn,teach,build,break,fix,grow,throw,catch,draw,paint,shoot,kick,push,pull,open,close,buy,sell,pay,save,spend,earn,borrow,lend,steal,fight,win,lose,love,hate,laugh,cry,smile,frown,yell,whisper,hug,kiss,call,text,chat,meet,agree,disagree,plan,decide,start,stop,begin,end,stay,leave,live,die,give,take,hold,drop,move,carry,ride,clean,repair,decorate,shop,travel,explore,visit,admire,enjoy,remember,forget,choose,organize,pursue,contemplate,struggle,endeavor,design,craft,innovate,calculate,analyze,research,debate,argue,support,oppose,justify,convince,persuade,hesitate,determine,resolve,embrace,convey,dictate,meditate,perceive,acknowledge,articulate,predict,inspect,anticipate,scrutinize,navigate,allocate,construct,deconstruct,overcome
+run,jump,walk,talk,eat,drink,sleep,read,write,play,watch,listen,sing,dance,cook,clean,drive,fly,swim,climb,sit,stand,think,learn,teach,
+build,break,fix,grow,throw,catch,draw,paint,shoot,kick,push,pull,open,close,buy,sell,pay,save,spend,earn,borrow,lend,steal,fight,win,
+lose,love,hate,laugh,cry,smile,frown,yell,whisper,hug,kiss,call,text,chat,meet,agree,disagree,plan,decide,start,stop,begin,end,stay,
+leave,live,die,give,take,hold,drop,move,carry,ride,clean,repair,decorate,shop,travel,explore,visit,admire,enjoy,remember,forget,choose,
+organize,pursue,contemplate,struggle,endeavor,design,craft,innovate,calculate,analyze,research,debate,argue,support,oppose,justify,
+convince,persuade,hesitate,determine,resolve,embrace,convey,dictate,meditate,perceive,acknowledge,articulate,predict,inspect,anticipate,
+scrutinize,navigate,allocate,construct,deconstruct,overcome
 
 
 

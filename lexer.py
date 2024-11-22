@@ -23,7 +23,7 @@ def t_Noun(t):
         return False
 
 def t_Verb(t):
-    if t in ListOfVerb:
+    if t in ListOfVerb or t[:-1] in ListOfVerb:
         return True
     else:
         return False
@@ -47,7 +47,7 @@ def t_Subject(t):
         return False
 
 # Test it out
-test = "he calmly chair"
+test = "he calmly sits chair"
 
 # Lexer Algorithm
 def LexerAlgorithm(Input):

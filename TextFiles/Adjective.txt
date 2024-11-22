@@ -1,2 +1,13 @@
-beautiful,ugly,large,small,big,tiny,smooth,rough,soft,hard,sharp,blunt,happy,sad,angry,calm,bright,dark,clear,cloudy,cold,hot,warm,cool,new,old,young,aged,strong,weak,fast,slow,quick,tall,short,fat,thin,heavy,light,sweet,sour,bitter,salty,loud,quiet,noisy,silent,clean,dirty,tidy,messy,rich,poor,expensive,cheap,valuable,worthless,colorful,dull,shiny,matte,polite,rude,kind,mean,brave,cowardly,honest,dishonest,friendly,unfriendly,intelligent,dumb,smart,foolish,generous,stingy,gentle,harsh,creative,boring,interesting,lazy,energetic,peaceful,violent,serious,silly,safe,dangerous,natural,artificial,moody,forgiving,stubborn,patient,impatient,curious,indifferent,ambitious,unambitious,vivid,lucid,carefree,compassionate,graceful,elegant,fair,whimsical,stoic,frivolous,arrogant,modest,sophisticated,unsophisticated,decisive,indecisive,daring,cautious,hopeful,desperate,motivated,discouraged,respectful,disrespectful,sympathetic,apathetic,articulate,inarticulate,coherent,incoherent,cheerful,morose,sassy,prim,naive,worldly,sentimental,cynical,rational,irrational,perceptive,oblivious,conscientious,thoughtless,refined,crude,conventional,eccentric,reliable,unreliable,assertive,submissive,content,restless,ambitious,lethargic,charismatic,bland,idealistic,pragmatic,vivacious,meek,ornate,plain,rustic,opulent,gaudy,subtle,blatant,poised,clumsy,inspirational,detrimental,meticulous,careless,exuberant,lethargic,heroic,cowardly,shrewd,naive,genial,aloof
+beautiful,ugly,large,small,big,tiny,smooth,rough,soft,hard,sharp,blunt,happy,sad,angry,calm,bright,dark,clear,cloudy,cold,hot,warm,
+cool,new,old,young,aged,strong,weak,fast,slow,quick,tall,short,fat,thin,heavy,light,sweet,sour,bitter,salty,loud,quiet,noisy,silent,
+clean,dirty,tidy,messy,rich,poor,expensive,cheap,valuable,worthless,colorful,dull,shiny,matte,polite,rude,kind,mean,brave,cowardly,
+honest,dishonest,friendly,unfriendly,intelligent,dumb,smart,foolish,generous,stingy,gentle,harsh,creative,boring,interesting,lazy,
+energetic,peaceful,violent,serious,silly,safe,dangerous,natural,artificial,moody,forgiving,stubborn,patient,impatient,curious,
+indifferent,ambitious,unambitious,vivid,lucid,carefree,compassionate,graceful,elegant,fair,whimsical,stoic,frivolous,arrogant,
+modest,sophisticated,unsophisticated,decisive,indecisive,daring,cautious,hopeful,desperate,motivated,discouraged,respectful,
+disrespectful,sympathetic,apathetic,articulate,inarticulate,coherent,incoherent,cheerful,morose,sassy,prim,naive,worldly,sentimental,
+cynical,rational,irrational,perceptive,oblivious,conscientious,thoughtless,refined,crude,conventional,eccentric,reliable,unreliable,
+assertive,submissive,content,restless,ambitious,lethargic,charismatic,bland,idealistic,pragmatic,vivacious,meek,ornate,plain,rustic,
+opulent,gaudy,subtle,blatant,poised,clumsy,inspirational,detrimental,meticulous,careless,exuberant,lethargic,heroic,cowardly,shrewd,
+naive,genial,aloof
 
