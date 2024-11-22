@@ -1,0 +1,1 @@
+time,person,year,way,day,thing,man,world,life,hand,lad,girl,boy,individual,child,chap,woman,female,man,male,citizen,lass
