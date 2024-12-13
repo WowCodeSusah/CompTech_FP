@@ -38,41 +38,38 @@ def is_preposition(word):
 def is_determiner(word):
     return word in determiner_list
 
-
-grammar = """
-    sentence: NOUN pred obj? comp?
-
-    pred: VERB | VERB ADV | VERB PREP NOUN | VERB PREP OBJ
-    obj: OBJ | DET ADJ? OBJ | OBJ "and" OBJ
-    comp: ADJ | ADV | PREP NOUN | PREP "the" OBJ | "as" NOUN | "like" NOUN
-
-    %import common.WS
-    %ignore WS
-"""
-
 def dynamic_grammar(sentence):
     # Dynamically adjust the grammar based on words in the sentence
+    def third_person_singular(verb):
+        if verb.endswith("y"):
+            return verb[:-1] + "ies"
+        elif verb.endswith("s") or verb.endswith("x") or verb.endswith("z") or verb.endswith("ch") or verb.endswith("sh"):
+            return verb + "es"
+        else:
+            return verb + "s"
+
     dynamic_noun = ' | '.join([f'"{word.strip()}"' for word in noun_list])
-    dynamic_subject = '| '.join([f'"{word.strip()}"' for word in subject_list])
+    dynamic_subject = ' | '.join([f'"{word.strip()}"' for word in subject_list])
     dynamic_verb = ' | '.join([f'"{word.strip()}"' for word in verb_list])
+    dynamic_verb2 = ' | '.join([f'"{third_person_singular(word.strip())}"' for word in verb_list])
     dynamic_adjective = ' | '.join([f'"{word.strip()}"' for word in adjective_list])
     dynamic_adverb = ' | '.join([f'"{word.strip()}"' for word in adverb_list])
     dynamic_determiner = ' | '.join([f'"{word.strip()}"' for word in determiner_list])
     dynamic_preposition = ' | '.join([f'"{word.strip()}"' for word in preposition_list])
 
-    # Modify grammar dynamically with lists from the files
+
     dynamic_grammar = f"""
     sentence: subj pred obj? comp?
-    subj: "the" NOUN | NOUN | SUBJECT
-    pred: VERB | VERB ADV | VERB PREP NOUN | VERB 
+    subj: DET NOUN | NOUN | SUBJECT
+    pred: VERB | ADV VERB 
     obj: OBJ | DET ADJ? OBJ | OBJ "and" OBJ
-    comp: ADJ | ADV | PREP NOUN | PREP "the" OBJ | "as" NOUN | "like" NOUN
+    comp: ADJ | ADV | PREP NOUN | PREP DET OBJ 
 
     NOUN: {dynamic_noun}
     OBJ: {dynamic_noun}
     DET: {dynamic_determiner}
     ADV: {dynamic_adverb}
-    VERB: {dynamic_verb}
+    VERB: {dynamic_verb} | {dynamic_verb2}
     ADJ: {dynamic_adjective}
     PREP: {dynamic_preposition}
     SUBJECT: {dynamic_subject}
