@@ -1,5 +1,5 @@
 # Token List
-tokens = ('Adjective', 'Verb', 'Adverb', 'Noun', 'Subject')
+tokens = ('Adjective', 'Verb', 'Adverb', 'Noun', 'Subject', 'Preposition', 'Determiner')
 
 def openFile(file):
     f = open(file, 'r')
@@ -14,6 +14,8 @@ ListOfAdjective = openFile('TextFiles/Adjective.txt')
 ListOfVerb = openFile('TextFiles/Verb.txt')
 ListofAdverb = openFile('TextFiles/Adverb.txt')
 ListofSubject = openFile('TextFiles/Subject.txt')
+ListofPreposition = openFile('TextFiles/Preposition.txt')
+ListodDeterminer = openFile('TextFiles/Determiner.txt')
 
 # All the functions
 def t_Noun(t):
@@ -45,6 +47,18 @@ def t_Subject(t):
         return True
     else:
         return False
+    
+def t_Preposition(t):
+    if t in ListofPreposition:
+        return True
+    else:
+        return False
+    
+def t_Determiner(t):
+    if t in ListodDeterminer:
+        return True
+    else:
+        return False
 
 # Test it out
 test = "he calmly sits chair"
@@ -64,6 +78,10 @@ def LexerAlgorithm(Input):
             Lexer.append(['Subject', data])
         elif t_Verb(data):
             Lexer.append(['Verb', data])
+        elif t_Preposition(data):
+            Lexer.append(['Preposition', data])
+        elif t_Determiner(data):
+            Lexer.append(['Determiner', data])
         else:
             return print('Lexer Error')
     return Lexer
